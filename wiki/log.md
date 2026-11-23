@@ -27,3 +27,26 @@
   - 建立 Wiki 知識入口首頁 (`wiki/index.md`)，涵蓋半導體製造八大旅程地圖與四層分類架構（concepts, processes, equipment, glossary）。
   - 建立 Wiki 歷程日誌 (`wiki/log.md`) 作為未來知識編譯之追蹤基準。
   - 目前尚未攝入外部原始資料，待 Stage 2 引入權威來源後開始依序編譯實體頁面。
+
+### [2026-11-23 10:25:00] - 第一批權威資料攝入與 Wiki 知識編譯 (Stage 2 - Batch 01)
+- **操作類型**: `INGEST`
+- **資料來源代碼**: `SRC-001` (ASML), `SRC-002` (imec)
+- **影響檔案**:
+  - `sources/manifest.json` (登錄兩篇來源中繼資料與真實 SHA256)
+  - `wiki/concepts/microchip-basics.md` (新增微晶片與積體電路基礎)
+  - `wiki/concepts/nanoscale-and-moore.md` (新增奈米微觀尺度與摩爾定律)
+  - `wiki/concepts/cleanroom-standards.md` (新增無塵室環境標準)
+  - `wiki/processes/01-silicon-refining.md` (新增矽原料提取與提純)
+  - `wiki/processes/02-wafer-manufacturing.md` (新增晶圓長晶與切片)
+  - `wiki/processes/03-thin-film-deposition.md` (新增薄膜沉積技術)
+  - `wiki/processes/04-photolithography.md` (新增微影技術與 EUV)
+  - `wiki/processes/05-etching.md` (新增蝕刻製程)
+  - `wiki/processes/06-doping.md` (新增摻雜技術與電晶體構建)
+  - `wiki/processes/07-metallization.md` (新增金屬導線與層間互連)
+  - `wiki/processes/08-packaging-and-testing.md` (新增晶圓封裝與測試)
+  - `wiki/glossary/terms.md` (新增核心術語與生活比喻辭典)
+  - `wiki/index.md` (更新首頁導覽，串接所有實體頁面連結)
+- **更新摘要**:
+  - 正式攝入 ASML 與 imec 官方第一手教學文獻，驗證 Checksum 並固化於 `raw/` 與 `sources/manifest.json`。
+  - 完整編譯半導體基礎概念、無塵室環境及八大核心製造流程，全面保留英文專業術語（IC, EUV, CVD, PVD, RIE, MOSFET, CMP 等）並附帶直觀生活化比喻。
+  - 完成所有 Markdown 頁面之 YAML Frontmatter、來源標記、前置條件與相關頁面雙向串連。

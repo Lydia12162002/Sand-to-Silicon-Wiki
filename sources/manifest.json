@@ -3,5 +3,28 @@
   "title": "SandToSiliconSourceManifest",
   "description": "半導體製造知識庫之不可變原始資料來源清單 (Immutable Raw Sources Manifest)",
   "version": "1.0.0",
-  "sources": []
+  "sources": [
+    {
+      "id": "SRC-001",
+      "title": "The Basics of Microchips",
+      "author_organization": "ASML",
+      "url": "https://www.asml.com/en/technology/all-about-microchips/microchip-basics",
+      "filepath": "raw/SRC-001_asml_microchip_basics.html",
+      "verification_date": "2026-11-23",
+      "checksum": "c8e30194b556144a822519ade1c626ab688b64cb3561b95c4b5031aa05220a81",
+      "checksum_algorithm": "SHA256",
+      "summary": "ASML 官方微晶片基礎教學文獻，闡釋微晶片定義、電晶體作為微型電流開關之機制、矽原料作為半導體之特性（摻雜硼與磷改變導電度）、二氧化矽砂石融熔鑄造為晶棒（Ingot）並切片為晶圓（Wafer）、奈米微觀尺度與 ASML 極紫外光微影（EUV）技術之角色、數位晶片與類比晶片區別、邏輯晶片（CPU/GPU/NPU）與記憶體晶片（DRAM/NAND）分類、摩爾定律，以及 ASML 本身專注於微影設備製造而非生產晶片之分工事實。"
+    },
+    {
+      "id": "SRC-002",
+      "title": "How Are Microchips Made?",
+      "author_organization": "imec",
+      "url": "https://www.imec-int.com/en/what-we-offer/semiconductor-education-and-workforce-development/microchips/how-are-microchips-made",
+      "filepath": "raw/SRC-002_imec_how_are_microchips_made.html",
+      "verification_date": "2026-11-23",
+      "checksum": "7a7ab16165b79b5b527c1514495fa4680d4339f638b9dad4ddbbefcf3b807889",
+      "checksum_algorithm": "SHA256",
+      "summary": "比利時頂尖半導體研究中心 imec 官方製程教學文獻，詳解從沙子到晶片的製造流程：步驟一矽原料提純與晶圓切片拋光；步驟二薄膜沉積（化學氣相沉積 CVD 與物理氣相沉積 PVD）；步驟三光阻塗布與紫外光曝光微影；步驟四化學或電漿蝕刻去除材料雕琢電路；步驟五摻雜雜質建立 P 型與 N 型載子以構成電晶體元件；步驟二至五反覆循環數百次以堆疊電晶體與金屬導線；奈米極限尺寸與無塵室環境嚴苛控管；步驟六晶圓嚴格測試、切割獨立晶粒、打線封裝與接腳整合，以及積體電路設計與全球半導體分工生態系。"
+    }
+  ]
 }

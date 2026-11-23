@@ -2,46 +2,33 @@
 title: "半導體製造知識庫：從沙子到晶片"
 english_title: "Sand to Silicon: Semiconductor Manufacturing Knowledge Base"
 category: "index"
-last_updated: "2026-11-18"
+sources:
+  - "SRC-001"
+  - "SRC-002"
+last_updated: "2026-11-23"
 ---
 
 # 半導體製造知識庫：從沙子到晶片（Sand to Silicon）
 
-歡迎來到 **「從沙子到晶片：半導體製造」LLM Wiki**！本知識庫旨在用最白話、生動且具備高度科學精確性的方式，帶領零基礎讀者理解人類現代科技奇蹟——如何將海灘上不起眼的沙子（二氧化矽），經過數百道精密科學製程，打造成指甲大小、卻容納數百億個電晶體的微型運算大腦（微處理器晶片）。
+歡迎來到 **「從沙子到晶片：半導體製造」LLM Wiki**！本知識庫旨在用最通俗易懂的語言與生動的生活比喻，輔以高度科學精確性，帶領讀者深入探索人類最先進的科技奇蹟——如何將海灘上隨處可見的沙子（二氧化矽），透過數百道精密科學製程，打造成指甲大小、卻容納數百億個電晶體的微型運算大腦（微處理器晶片）。
 
-本知識庫遵循 **Andrej Karpathy 的 LLM Wiki 模式**，由 AI Agent 依據頂尖半導體大廠（如 ASML、Intel、Lam Research、imec 等）官方權威文獻持續編譯、維護與校驗。
-
----
-
-## 快速導覽與結構分類
-
-本知識庫採多層次、網狀互聯結構，包含四大核心分類：
-
-```text
-wiki/
-├── index.md             # 本首頁：全域知識入口與製程藍圖
-├── log.md               # 知識庫歷程日誌：追蹤所有編譯與更新紀錄
-├── concepts/            # 基本科學概念：半導體物理、能隙、純度定義等
-├── processes/           # 八大關鍵製程：詳細技術步驟與原理
-├── equipment/           # 核心精密設備：微影機、蝕刻機、離子佈植機等
-└── glossary/            # 術語辭典：專業詞彙、縮寫對照與生活化比喻
-```
+本專案依循 **Andrej Karpathy 的 LLM Wiki 模式**，由 AI Agent 依據 ASML (SRC-001) 與 imec (SRC-002) 等頂尖官方權威文獻，持續進行知識編譯、關聯交叉鏈結與嚴格查驗。
 
 ---
 
 ## 半導體製造八大旅程地圖（Roadmap）
 
-半導體晶片製造是一條精確至原子尺度的極致旅程，整體涵蓋以下八大製程階段：
+半導體晶片製造是一條精確至原子尺度的極致旅程，整體涵蓋以下八大製程階段（點擊可直接跳轉至各製程專頁）：
 
 ```mermaid
 flowchart TD
     S1["1. 矽原料提純 (Silicon Refining)<br/>普通砂石 ➔ 99.9999999% 電子級多晶矽"] --> S2["2. 晶圓製造 (Wafer Fabrication)<br/>柴式長晶 ➔ 矽晶棒 ➔ 切片研磨拋光鏡面"]
-    S2 --> S3["3. 薄膜沉積 (Thin Film Deposition)<br/>奈米級噴漆：CVD / PVD / ALD 原生保護與導電層"]
-    S3 --> S4["4. 微影技術 (Photolithography)<br/>奈米印表機：塗布光阻 ➔ 紫外光曝光 ➔ 顯影圖案"]
-    S4 --> S5["5. 蝕刻製程 (Etching)<br/>微觀雕刻刀：乾蝕刻與濕蝕刻去除多餘材料"]
-    S5 --> S6["6. 摻雜製程 (Doping / Ion Implantation)<br/>注入活性：離子佈植微量雜質改變局部導電特性"]
-    S6 --> S7["7. 金屬連線 (Metallization / Interconnects)<br/>立體高速公路：銅雙波紋製程與層間奈米通孔 (Via)"]
-    S7 --> S8["8. 封裝與測試 (Packaging & Testing)<br/>晶圓針測 ➔ 切割分離 ➔ 打線/覆晶/3D封裝 ➔ 終檢出廠"]
+    S2 --> S3["3. 薄膜沉積 (Thin Film Deposition)<br/>原子級微觀噴漆：CVD / PVD 構建絕緣與導電薄膜"]
+    S3 --> S4["4. 微影技術 (Photolithography)<br/>極限相片沖印：光阻塗布 ➔ 紫外光曝光 ➔ 顯影圖案"]
+    S4 --> S5["5. 蝕刻製程 (Etching)<br/>微觀精準雕刻刀：乾蝕刻與電漿深挖立體線路"]
+    S5 --> S6["6. 摻雜製程 (Doping / Ion Implantation)<br/>點石成金的滴墨法：離子佈植微量雜質構成電晶體"]
+    S6 --> S7["7. 金屬連線 (Metallization / Interconnects)<br/>十層立體高架公路：雙波紋銅製程與奈米導電通孔"]
+    S7 --> S8["8. 封裝與測試 (Packaging & Testing)<br/>晶圓針測品檢 ➔ 切割分離 ➔ 封裝保護與散熱引腳"]
 ```
 
 ---
@@ -49,31 +36,28 @@ flowchart TD
 ## 核心知識分類專區
 
 ### 1. 製程技術（Processes）
-- [01-矽原料提取與提純](file:///c:/Users/MB205/Downloads/Sand-to-Silicon-Wiki/wiki/processes/01-silicon-refining.md) *(待 Stage 2 權威資料攝入後建立)*
-- [02-晶圓長晶與切片](file:///c:/Users/MB205/Downloads/Sand-to-Silicon-Wiki/wiki/processes/02-wafer-manufacturing.md) *(待 Stage 2 建立)*
-- [03-薄膜沉積技術 (CVD/PVD/ALD)](file:///c:/Users/MB205/Downloads/Sand-to-Silicon-Wiki/wiki/processes/03-thin-film-deposition.md) *(待 Stage 2 建立)*
-- [04-微影技術 (DUV/EUV)](file:///c:/Users/MB205/Downloads/Sand-to-Silicon-Wiki/wiki/processes/04-photolithography.md) *(待 Stage 2 建立)*
-- [05-蝕刻技術 (乾蝕刻/濕蝕刻)](file:///c:/Users/MB205/Downloads/Sand-to-Silicon-Wiki/wiki/processes/05-etching.md) *(待 Stage 2 建立)*
-- [06-摻雜技術 (離子佈植)](file:///c:/Users/MB205/Downloads/Sand-to-Silicon-Wiki/wiki/processes/06-doping.md) *(待 Stage 2 建立)*
-- [07-金屬導線與互連 (銅製程/CMP)](file:///c:/Users/MB205/Downloads/Sand-to-Silicon-Wiki/wiki/processes/07-metallization.md) *(待 Stage 2 建立)*
-- [08-晶圓封裝與測試](file:///c:/Users/MB205/Downloads/Sand-to-Silicon-Wiki/wiki/processes/08-packaging-and-testing.md) *(待 Stage 2 建立)*
+八大核心製造流程詳細專頁已全數建置完成，內容涵蓋原理、參數、設備、上下游關聯與白話比喻：
+- [01-矽原料提取與提純](processes/01-silicon-refining.md)：從二氧化矽砂石到 99.9999999% 電子級高純度多晶矽。
+- [02-晶圓長晶與切片](processes/02-wafer-manufacturing.md)：柴可拉斯基法拉製單晶矽晶棒、線鋸切片與 CMP 拋光成鏡面晶圓。
+- [03-薄膜沉積技術](processes/03-thin-film-deposition.md)：化學氣相沉積（CVD）與物理氣相沉積（PVD）打造奈米薄膜。
+- [04-微影技術](processes/04-photolithography.md)：光阻塗布、光罩對準、DUV 與 ASML EUV 極紫外光曝光顯影。
+- [05-蝕刻製程](processes/05-etching.md)：等向性濕蝕刻與非等向性電漿乾蝕刻（RIE）雕琢電路溝槽。
+- [06-摻雜技術與電晶體構建](processes/06-doping.md)：離子佈植打入磷與硼雜質，建立 P 型/N 型區域與電晶體閘極。
+- [07-金屬導線與層間互連](processes/07-metallization.md)：銅雙波紋製程與十餘層立體奈米高速公路互連。
+- [08-晶圓封裝與測試](processes/08-packaging-and-testing.md)：晶圓針測（CP）、晶粒切割、打線覆晶封裝與散熱出廠。
 
 ### 2. 基本科學概念（Concepts）
-- [能隙與半導體特性](file:///c:/Users/MB205/Downloads/Sand-to-Silicon-Wiki/wiki/concepts/bandgap-and-semiconductors.md) *(待 Stage 2 建立)*
-- [電子級矽（EGS）與純度 99.9999999% 的意義](file:///c:/Users/MB205/Downloads/Sand-to-Silicon-Wiki/wiki/concepts/electronic-grade-silicon.md) *(待 Stage 2 建立)*
-- [無塵室等級與潔淨度規範](file:///c:/Users/MB205/Downloads/Sand-to-Silicon-Wiki/wiki/concepts/cleanroom-standards.md) *(待 Stage 2 建立)*
+- [微晶片與積體電路基礎](concepts/microchip-basics.md)：什麼是晶片？電晶體開關原理、半導體特性、邏輯與記憶體晶片分類。
+- [奈米微觀尺度與摩爾定律](concepts/nanoscale-and-moore.md)：1 奈米有多小？指甲生長比喻、微觀物理極限與摩爾定律發展史。
+- [無塵室與半導體製造環境](concepts/cleanroom-standards.md)：為什麼微塵是晶片的致命殺手？層流氣流、防塵衣與潔淨度規範。
 
-### 3. 關鍵設備（Equipment）
-- [極紫外光微影機 (ASML EUV Scanner)](file:///c:/Users/MB205/Downloads/Sand-to-Silicon-Wiki/wiki/equipment/euv-scanner.md) *(待 Stage 2 建立)*
-- [反應離子蝕刻機 (RIE / Lam Research Etcher)](file:///c:/Users/MB205/Downloads/Sand-to-Silicon-Wiki/wiki/equipment/reactive-ion-etcher.md) *(待 Stage 2 建立)*
-- [長晶爐 (Czochralski Crystal Puller)](file:///c:/Users/MB205/Downloads/Sand-to-Silicon-Wiki/wiki/equipment/czochralski-furnace.md) *(待 Stage 2 建立)*
-
-### 4. 專業術語辭典（Glossary）
-- [半導體專有名詞白話辭典](file:///c:/Users/MB205/Downloads/Sand-to-Silicon-Wiki/wiki/glossary/terms.md) *(待 Stage 2 建立)*
+### 3. 專業術語辭典（Glossary）
+- [半導體核心術語與生活化比喻辭典](glossary/terms.md)：完整收錄晶圓、光罩、光阻、EUV、CVD、RIE、CMP、SoC 等關鍵詞彙的繁體中文解釋與直覺比喻。
 
 ---
 
-## 閱讀與更新指引
+## 閱讀指引與資料來源追溯
 
-- **如何閱讀本 Wiki**：初學者建議由上方八大旅程地圖順序依序閱讀；欲深究特定機台或術語者，可直接點擊相應的超連結跳轉。
-- **維護與稽核紀錄**：所有頁面的建立、修訂、來源引用與一致性檢驗，皆詳細登錄於 [wiki/log.md](file:///c:/Users/MB205/Downloads/Sand-to-Silicon-Wiki/wiki/log.md)。
+- **初學者建議路徑**：建議先閱讀 [微晶片與積體電路基礎](concepts/microchip-basics.md) 了解電晶體與晶片概觀，再依序瀏覽八大製程技術（從 01 至 08）。遇到生疏名詞可隨時查閱 [術語辭典](glossary/terms.md)。
+- **不可變原始來源清單**：本知識庫所有事實陳述皆能精確溯源至 [sources/manifest.json](file:///c:/Users/MB205/Downloads/Sand-to-Silicon-Wiki/sources/manifest.json) 中的官方權威文獻（本批次：ASML `SRC-001` 與 imec `SRC-002`）。
+- **歷程更新日誌**：每次 Wiki 頁面的增修與演進，皆忠實記錄於 [wiki/log.md](log.md)。

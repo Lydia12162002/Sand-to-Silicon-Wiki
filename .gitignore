@@ -34,3 +34,9 @@ node_modules/
 logs/debug.log
 logs/*.tmp
 logs/local_cache/
+
+# Third-party Copyrighted Raw Downloads (Retain locally for hash verification, exclude from public git)
+raw/*.html
+raw/*.htm
+raw/*.pdf
+
