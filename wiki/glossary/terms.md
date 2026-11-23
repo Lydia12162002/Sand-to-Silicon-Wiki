@@ -6,6 +6,8 @@ tags: ["術語辭典", "英文縮寫", "白話比喻", "半導體入門"]
 sources:
   - "SRC-001"
   - "SRC-002"
+  - "SRC-003"
+  - "SRC-004"
 last_updated: "2026-11-23"
 prerequisites: []
 related_pages:
@@ -60,9 +62,23 @@ related_pages:
 | **光罩** | Photomask / Reticle | **電路模板底片**：鍍有不透光鉻金屬的超純石英玻璃板，承載放大的原始電路設計藍圖。 | [04-微影技術](../processes/04-photolithography.md) |
 | **蝕刻** | Etching | **微觀精準雕刻刀**：用電漿（乾蝕刻）或化學酸液（濕蝕刻）將未被光阻保護的區域挖掉雕琢成立體線路。 | [05-蝕刻製程](../processes/05-etching.md) |
 | **摻雜** | Doping | **點石成金的滴墨法**：用離子佈植機將微量硼（P型）或磷（N型）原子高速轟入矽晶格，建立電晶體。 | [06-摻雜技術](../processes/06-doping.md) |
-| **金屬連線** | Metallization / Interconnects | **十層立體高架公路**：利用雙波紋銅製程與導電通孔，將底層數十億個電晶體互聯成完整電路網絡。 | [07-金屬導線](../processes/07-metallization.md) |
+| **金屬連線** | Metallization / Interconnects | **十層立體高架公路**：利用銅雙鑲嵌製程（Dual Damascene）與導電通孔，將底層數十億個電晶體互聯成完整電路網絡。 | [07-金屬導線](../processes/07-metallization.md) |
 | **晶圓針測** | Wafer Probing / Wafer Sort (CP) | **嚴苛品檢針**：用顯微探針卡在晶圓切割前測試每顆晶粒的電氣訊號，標註不良品。 | [08-晶圓封裝](../processes/08-packaging-and-testing.md) |
 | **封裝** | Packaging | **穿戴防護裝甲與引腳**：將晶片切開後裝進耐撞耐溫的絕緣外殼，並拉出金屬接腳供主機板焊接。 | [08-晶圓封裝](../processes/08-packaging-and-testing.md) |
+
+---
+
+### 四、先進薄膜與電漿蝕刻關鍵術語（Lam Research 技術核心）
+
+| 繁體中文術語 | 英文全稱與縮寫 | 生活化比喻 / 白話定義 | 關聯頁面 |
+| :--- | :--- | :--- | :--- |
+| **原子層沉積** | Atomic Layer Deposition (ALD) | **單原子層自限堆積**：利用兩種前驅氣體交替注入與吹洗，以自限性表面化學反應每次精準生長單一原子層厚度；ALD 具有優異保形性，可在適當製程條件下形成高度均勻薄膜。 | [03-薄膜沉積](../processes/03-thin-film-deposition.md) |
+| **原子層蝕刻** | Atomic Layer Etching (ALE) | **原子級微觀剝洋蔥**：ALD 的反向製程。先讓氣體化學吸附於最表面原子層改質，再以微弱離子脫附排出，實現單原子層級材料移除。 | [05-蝕刻製程](../processes/05-etching.md) |
+| **離子-中性粒子協同效應** | Ion-Neutral Synergy | **化學反應與動能雙劍合璧**：Lam 前 CTO Rick Gottscho 命名之原理。垂直高能離子提供活化能，中性自由基迅速生成揮發性氣體，兼具超高蝕刻速率、高選擇比與垂直陡峭側壁。 | [05-蝕刻製程](../processes/05-etching.md) |
+| **電化學沉積** | Electrochemical Deposition (ECD) | **微觀奈米電鍍**：將晶圓浸入金屬電鍍液通電，利用陽離子還原在極微小溝槽內均勻填滿無孔隙純銅導線。 | [03-薄膜沉積](../processes/03-thin-film-deposition.md) |
+| **電漿增強 CVD** | Plasma-Enhanced CVD (PECVD) | **低溫節能薄膜爐**：利用電漿高能電子分解氣體，大幅降低化學沉積所需溫度，保護底層金屬導線不被高溫熔毀。 | [03-薄膜沉積](../processes/03-thin-film-deposition.md) |
+| **蝕刻選擇比** | Selectivity | **靶向專一攻擊力**：目標材料蝕刻速率與保護遮罩蝕刻速率的比值。高選擇比確保遮罩不被過早吃穿。 | [05-蝕刻製程](../processes/05-etching.md) |
+| **深寬比** | Aspect Ratio (AR) | **奈米摩天深井比例**：溝槽或通孔的深度與開口寬度之比值。3D NAND 垂直孔道深寬比常高達 40:1 至 60:1。 | [05-蝕刻製程](../processes/05-etching.md) |
 
 ---
 
@@ -70,3 +86,5 @@ related_pages:
 
 - `SRC-001`: ASML, *The Basics of Microchips* (2024). [URL](https://www.asml.com/en/technology/all-about-microchips/microchip-basics)
 - `SRC-002`: imec, *How Are Microchips Made?* (2024). [URL](https://www.imec-int.com/en/what-we-offer/semiconductor-education-and-workforce-development/microchips/how-are-microchips-made)
+- `SRC-003`: Lam Research, *Deposition Essentials (Semi 101)* (2024). [URL](https://newsroom.lamresearch.com/Deposition-Essentials-Semi-101)
+- `SRC-004`: Lam Research, *Etch Essentials: The Building Blocks of AI Era Microchips (Semi 101)* (2024). [URL](https://newsroom.lamresearch.com/etch-essentials-semiconductor-manufacturing)

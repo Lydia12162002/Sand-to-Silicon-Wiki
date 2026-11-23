@@ -50,3 +50,28 @@
   - 正式攝入 ASML 與 imec 官方第一手教學文獻，驗證 Checksum 並固化於 `raw/` 與 `sources/manifest.json`。
   - 完整編譯半導體基礎概念、無塵室環境及八大核心製造流程，全面保留英文專業術語（IC, EUV, CVD, PVD, RIE, MOSFET, CMP 等）並附帶直觀生活化比喻。
   - 完成所有 Markdown 頁面之 YAML Frontmatter、來源標記、前置條件與相關頁面雙向串連。
+
+### [2026-11-23 10:43:00] - 第二批權威資料攝入與 Wiki 專業深化 (Stage 2 - Batch 02)
+- **操作類型**: `INGEST`
+- **資料來源代碼**: `SRC-003` (Lam Research), `SRC-004` (Lam Research)
+- **影響檔案**:
+  - `sources/manifest.json` (登錄 Lam Research 兩篇文獻與真實 SHA256)
+  - `wiki/processes/03-thin-film-deposition.md` (擴充 ALD 自限性反應、PECVD 低溫優勢、ECD 電鍍填孔)
+  - `wiki/processes/05-etching.md` (擴充乾蝕刻物理/化學機制、Ion-Neutral Synergy 協同效應、ALE 原子層蝕刻、選擇比與深寬比)
+  - `wiki/glossary/terms.md` (新增 ALD, ALE, Ion-Neutral Synergy, ECD, PECVD, Selectivity, Aspect Ratio 等 7 項術語)
+  - `wiki/index.md` (更新導航索引與來源列表)
+- **更新摘要**:
+  - 成功引入半導體薄膜沉積與蝕刻設備龍頭 Lam Research 官方技術文獻，完成 SHA256 驗證並登記於 Manifest。
+  - 正式解決 Batch 01 中標記為 NEEDS_REVIEW 的「原子層沉積（ALD）」與「乾蝕刻 RIE 物理/化學/選擇比機制」，提供完整的第一手官方文獻證據，狀態成功提升為 PASS。
+  - 保留 6 項非 Lam Research 範疇的待查項目（如西門子法、柴式長晶、CMP、退火、銅雙鑲嵌製程命名與 EUV 波長數值），持續標註為 NEEDS_REVIEW 待後續批次官方資料補強。
+
+### [2026-11-23 10:50:00] - Batch 02 提交前局部修正：ALD 保形性精確化與銅雙鑲嵌術語統一 (Local Patch)
+- **操作類型**: `LOCAL_PATCH`
+- **影響檔案**:
+  - `wiki/processes/03-thin-film-deposition.md`
+  - `wiki/processes/07-metallization.md`
+  - `wiki/glossary/terms.md`
+  - `wiki/index.md`
+- **更新摘要**:
+  - 修正 ALD 保形性敘述：由宣稱「100% 完美保形」修訂為符合 Lam Research SRC-003 原文之「ALD 具有優異保形性，可在適當製程條件下形成高度均勻薄膜」，避免對所有製程作絕對宣稱。
+  - 統一技術用語：將「銅雙波紋製程」全面修正為台灣半導體產業標準術語「銅雙鑲嵌製程（Dual Damascene）」。

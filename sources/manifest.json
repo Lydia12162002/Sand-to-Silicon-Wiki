@@ -25,6 +25,28 @@
       "checksum": "7a7ab16165b79b5b527c1514495fa4680d4339f638b9dad4ddbbefcf3b807889",
       "checksum_algorithm": "SHA256",
       "summary": "比利時頂尖半導體研究中心 imec 官方製程教學文獻，詳解從沙子到晶片的製造流程：步驟一矽原料提純與晶圓切片拋光；步驟二薄膜沉積（化學氣相沉積 CVD 與物理氣相沉積 PVD）；步驟三光阻塗布與紫外光曝光微影；步驟四化學或電漿蝕刻去除材料雕琢電路；步驟五摻雜雜質建立 P 型與 N 型載子以構成電晶體元件；步驟二至五反覆循環數百次以堆疊電晶體與金屬導線；奈米極限尺寸與無塵室環境嚴苛控管；步驟六晶圓嚴格測試、切割獨立晶粒、打線封裝與接腳整合，以及積體電路設計與全球半導體分工生態系。"
+    },
+    {
+      "id": "SRC-003",
+      "title": "Deposition Essentials (Semi 101)",
+      "author_organization": "Lam Research",
+      "url": "https://newsroom.lamresearch.com/Deposition-Essentials-Semi-101",
+      "filepath": "raw/SRC-003_lam_deposition_essentials.html",
+      "verification_date": "2026-11-23",
+      "checksum": "893b96813f50bcae9ae2c8afa5cad01280f62c278ced389ad7b0a7dfbacbbb8d",
+      "checksum_algorithm": "SHA256",
+      "summary": "Lam Research 官方薄膜沉積技術專文，詳解金屬沉積（導電路徑鋪設）與介電質沉積（絕緣引流阻擋）之核心目的與生活比喻；深入對比常見沉積技術：化學氣相沉積（CVD）、物理氣相沉積（PVD/濺鍍限制與陰影效應）、電化學沉積（ECD 填補金屬孔隙）與紫外線熱處理（UVTP）；深入解說 CVD 衍生技術，包括電漿增強 CVD（PECVD 低溫優勢）、高密度電漿 CVD（HDP-CVD 無孔隙填補）以及原子層沉積（ALD：前驅氣體交替注入、自限性表面化學反應、原子層級精準厚度控制與 3D 結構高保形性）。"
+    },
+    {
+      "id": "SRC-004",
+      "title": "Etch Essentials: The Building Blocks of AI Era Microchips (Semi 101)",
+      "author_organization": "Lam Research",
+      "url": "https://newsroom.lamresearch.com/etch-essentials-semiconductor-manufacturing",
+      "filepath": "raw/SRC-004_lam_etch_essentials.html",
+      "verification_date": "2026-11-23",
+      "checksum": "8cf3b5f2a01494ccd860a79597763df36fa6ab30f27fde86350ff386d577d00a",
+      "checksum_algorithm": "SHA256",
+      "summary": "Lam Research 官方蝕刻技術專文，詳述蝕刻將光阻圖案雕琢成立體 3D 電路之本質（石雕比喻）；系統性對比濕蝕刻（液態化學溶解、等向性側蝕限制）與乾蝕刻（真空電漿、非等向性垂直方向性）；深入解析物理撞擊（濺射脫附）與化學反應（自由基生成揮發性氣體如四氟化矽 SiF4）之兩大機理；提出由 Lam 前 CTO Rick Gottscho 命名的『離子-中性粒子協同效應（Ion-Neutral Synergy）』，結合物理激活與化學揮發實現高速垂直側壁輪廓；詳解原子層蝕刻（ALE：自限性吸附與解吸脫附，實現單原子層級材料移除）、選擇比（Selectivity）、高深寬比（High Aspect Ratio, HAR）與電感耦合/電容耦合電漿機台設計。"
     }
   ]
 }

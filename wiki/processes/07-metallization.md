@@ -2,7 +2,7 @@
 title: "金屬導線與層間互連"
 english_title: "Metallization and Interconnects: The 3D Nanoscale Highway"
 category: "processes"
-tags: ["金屬連線", "銅製程", "雙波紋製程", "通孔", "CMP", "後段製程"]
+tags: ["金屬連線", "銅製程", "雙鑲嵌製程", "通孔", "CMP", "後段製程"]
 sources:
   - "SRC-001"
   - "SRC-002"
@@ -33,15 +33,15 @@ imec (SRC-002) 明確指出：「步驟二至步驟五會重複進行數百次�
 - **中層導線（Intermediate Interconnects）**：中等線寬，負責功能模組（如暫存器、邏輯單元）間的通訊。
 - **頂層導線（Global Interconnects）**：線條最粗，負責全晶片的供電電源（VDD / GND）分配與全域時脈（Clock）訊號同步。
 
-### 2. 銅雙波紋製程（Dual Damascene Process）
+### 2. 銅雙鑲嵌製程（Dual Damascene Process）
 
 > [!NOTE]
 > **待後續權威資料驗證 (NEEDS_REVIEW)**  
-> 來源 SRC-002 (imec) 與 SRC-001 (ASML) 直接支持重複沉積、微影與蝕刻以打造連接電晶體之金屬路徑（包含鋁與銅金屬）；關於特定之「雙波紋（Dual Damascene）」製程命名與化學電鍍細節，待後續批次引入金屬互連專門文獻補強驗證。
+> 來源 SRC-002 (imec) 與 SRC-001 (ASML) 直接支持重複沉積、微影與蝕刻以打造連接電晶體之金屬路徑（包含鋁與銅金屬）；關於特定之「雙鑲嵌（Dual Damascene）」製程命名與化學電鍍細節，待後續批次引入金屬互連專門文獻補強驗證。
 
 在早期製程中，金屬導線主要使用鋁（Aluminum）。但隨著線寬急遽微縮，鋁的電阻過大且容易產生電遷移（Electromigration）斷裂，因此自 130 奈米世代起全面改用導電率更高、抗電遷移能力更強的**銅（Copper, Cu）**：
 - **挑戰**：銅很難透過傳統反應離子蝕刻（RIE）進行乾蝕刻揮發。
-- **創新解法——雙波紋法（Damascene）**：
+- **創新解法——雙鑲嵌法（Dual Damascene）**：
   1. 先在晶圓表面沉積一層二氧化矽等低介電常數（Low-k）絕緣層。
   2. 利用微影與蝕刻，在絕緣層中挖出水平導線溝槽（Trench）與垂直導電通孔（Via）。
   3. 鍍上一層極薄的鉭（Ta/TaN）阻擋層（防止銅原子擴散滲透進矽基底）。
