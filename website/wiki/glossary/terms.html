@@ -1,0 +1,248 @@
+<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#081527"><meta name="description" content="從沙子到晶片：半導體製造 LLM Wiki"><title>半導體核心術語與生活化比喻辭典｜Sand to Silicon</title><link rel="stylesheet" href="../../assets/site.css"></head><body><div class="ambient-glow"></div><header class="site-header"><div class="header-inner"><a class="brand" href="../../index.html" aria-label="回到網站首頁"><span class="brand-mark"><span class="mark-core"></span><span class="mark-pins"></span></span><span class="brand-name">SAND<span class="brand-sep">/</span>SILICON<small>半導體製造 LLM Wiki</small></span></a><button id="menuToggle" class="menu-toggle" aria-label="開啟導覽" aria-expanded="false">☰</button><nav id="globalNav" class="global-nav" aria-label="主要導覽"><a class="nav-link " href="../../index.html">探索首頁</a><a class="nav-link active" href="../../wiki/index.html">知識 Wiki</a><a class="nav-link " href="../../slides/index.html">互動簡報</a><a class="nav-link " href="../../sources.html">資料來源</a><a class="nav-link " href="../../workflow.html">工作流程</a><a class="nav-link " href="../../evidence.html">檢查紀錄</a></nav></div></header><main><div class="wiki-layout"><aside class="wiki-aside"><h3>知識導覽</h3><a href="../index.html">⌂ 回到 Wiki 入口</a><a class="" href="../processes/07-metallization.html">金屬導線與層間互連</a><a class="" href="../processes/05-etching.html">蝕刻製程</a><a class="" href="../processes/06-doping.html">摻雜技術與電晶體構建</a><a class="" href="../processes/02-wafer-manufacturing.html">晶圓長晶與切片</a><a class="" href="../processes/03-thin-film-deposition.html">薄膜沉積技術</a><a class="" href="../processes/08-packaging-and-testing.html">晶圓封裝與測試</a><a class="" href="../processes/04-photolithography.html">微影技術</a><a class="" href="../processes/01-silicon-refining.html">矽原料提取與提純</a><a class="" href="../concepts/nanoscale-and-moore.html">奈米微觀尺度與摩爾定律</a><a class="" href="../concepts/microchip-basics.html">微晶片與積體電路基礎</a><a class="" href="../concepts/cleanroom-standards.html">無塵室與半導體製造環境</a><a class="current" href="../glossary/terms.html">半導體核心術語與生活化比喻辭典</a><a href="../../sources.html">資料來源清單 ↗</a></aside><div class="wiki-main"><div class="article-title"><span class="section-kicker">WIKI / 專業術語</span><h1>半導體核心術語與生活化比喻辭典</h1><p>Semiconductor Glossary: Key Terms and Beginner Metaphors</p><div class="article-tags"><a class="tag" href="../../sources.html#SRC-001">SRC-001 · ASML</a><a class="tag" href="../../sources.html#SRC-002">SRC-002 · imec</a><a class="tag" href="../../sources.html#SRC-003">SRC-003 · Lam Research</a><a class="tag" href="../../sources.html#SRC-004">SRC-004 · Lam Research</a></div></div><article class="paper"><h1>半導體核心術語與生活化比喻辭典 (Semiconductor Glossary)</h1>
+<p>本辭典彙整自 ASML (SRC-001) 與 imec (SRC-002) 官方教材中出現之關鍵專有名詞，提供繁體中文標準翻譯、英文全稱與縮寫，並附帶生活化白話比喻，協助零基礎讀者迅速掌握核心概念。</p>
+<hr />
+<h2>核心術語清單（依製程與概念分類）</h2>
+<h3>一、基本概念與物理單位</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">繁體中文術語</th>
+  <th style="text-align:left">英文全稱與縮寫</th>
+  <th style="text-align:left">生活化比喻 / 白話定義</th>
+  <th style="text-align:left">關聯頁面</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>微晶片 / 積體電路</strong></td>
+  <td style="text-align:left">Microchip / Integrated Circuit (IC)</td>
+  <td style="text-align:left"><strong>微型立體都市</strong>：在指甲大小的矽片上，密布著數十億個微型開關與導線的高科技大腦。</td>
+  <td style="text-align:left"><a href="../concepts/microchip-basics.html">微晶片基礎</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>電晶體</strong></td>
+  <td style="text-align:left">Transistor</td>
+  <td style="text-align:left"><strong>奈米電燈開關</strong>：利用微弱電壓控制通斷的電子開關，開為「1」、關為「0」，無機械移動件。</td>
+  <td style="text-align:left"><a href="../concepts/microchip-basics.html">微晶片基礎</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>半導體</strong></td>
+  <td style="text-align:left">Semiconductor</td>
+  <td style="text-align:left"><strong>能屈能伸的水閘</strong>：導電度介於導體與絕緣體之間，能透過微量摻雜隨心所欲控制導電性能的材料。</td>
+  <td style="text-align:left"><a href="../concepts/microchip-basics.html">微晶片基礎</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>奈米</strong></td>
+  <td style="text-align:left">Nanometer (nm, $10^{-9}\text{ m}$)</td>
+  <td style="text-align:left"><strong>指甲每秒生長長度</strong>：十億分之一米。1 毫米等於一百萬奈米；人類紅血球約 7,000 奈米。</td>
+  <td style="text-align:left"><a href="../concepts/nanoscale-and-moore.html">奈米尺度</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>摩爾定律</strong></td>
+  <td style="text-align:left">Moore's Law</td>
+  <td style="text-align:left"><strong>行李箱翻倍魔術</strong>：每隔約 18～24 個月，晶片上容納的電晶體數量翻倍，運算能力提升且價格下降。</td>
+  <td style="text-align:left"><a href="../concepts/nanoscale-and-moore.html">奈米尺度</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>無塵室</strong></td>
+  <td style="text-align:left">Cleanroom</td>
+  <td style="text-align:left"><strong>終極無塵避風港</strong>：控制落塵量比醫院手術室乾淨萬倍的廠房，防止微塵砸毀奈米電路。</td>
+  <td style="text-align:left"><a href="../concepts/cleanroom-standards.html">無塵室環境</a></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3>二、晶片架構與功能分類</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">繁體中文術語</th>
+  <th style="text-align:left">英文全稱與縮寫</th>
+  <th style="text-align:left">生活化比喻 / 白話定義</th>
+  <th style="text-align:left">關聯頁面</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>邏輯晶片</strong></td>
+  <td style="text-align:left">Logic Chip</td>
+  <td style="text-align:left"><strong>運算大腦</strong>：負責處理資訊與執行邏輯運算的晶片，如電腦 CPU、影像 GPU、AI 運算 NPU。</td>
+  <td style="text-align:left"><a href="../concepts/microchip-basics.html">微晶片基礎</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>記憶體晶片</strong></td>
+  <td style="text-align:left">Memory Chip</td>
+  <td style="text-align:left"><strong>資料倉庫與工作檯</strong>：儲存數位資訊的晶片，分為快速斷電消失的 DRAM 與永久保存的 NAND Flash。</td>
+  <td style="text-align:left"><a href="../concepts/microchip-basics.html">微晶片基礎</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>系統單晶片</strong></td>
+  <td style="text-align:left">System-on-a-Chip (SoC)</td>
+  <td style="text-align:left"><strong>全功能瑞士刀</strong>：將 CPU、GPU、通訊晶片與記憶體整合在單一小晶片內（如智慧型手機處理器）。</td>
+  <td style="text-align:left"><a href="../concepts/microchip-basics.html">微晶片基礎</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>特殊應用晶片</strong></td>
+  <td style="text-align:left">Application-Specific IC (ASIC)</td>
+  <td style="text-align:left"><strong>專職特工</strong>：專為單一重複性任務（如條碼掃描、加密演算法）量身定制的高效率晶片。</td>
+  <td style="text-align:left"><a href="../concepts/microchip-basics.html">微晶片基礎</a></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3>三、八大核心製程技術</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">繁體中文術語</th>
+  <th style="text-align:left">英文全稱與縮寫</th>
+  <th style="text-align:left">生活化比喻 / 白話定義</th>
+  <th style="text-align:left">關聯頁面</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>二氧化矽</strong></td>
+  <td style="text-align:left">Silicon Dioxide ($\text{SiO}_2$, Silica Sand)</td>
+  <td style="text-align:left"><strong>晶片的純淨泥土</strong>：普通石英沙的主要成分，經過高溫化學冶煉可提純出純矽。</td>
+  <td style="text-align:left"><a href="../processes/01-silicon-refining.html">01-矽原料提取</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>矽晶棒</strong></td>
+  <td style="text-align:left">Ingot</td>
+  <td style="text-align:left"><strong>高科技壽司長捲</strong>：經由柴式長晶爐旋轉拉出的巨大單晶矽圓柱體。</td>
+  <td style="text-align:left"><a href="../processes/02-wafer-manufacturing.html">02-晶圓製造</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>晶圓</strong></td>
+  <td style="text-align:left">Wafer</td>
+  <td style="text-align:left"><strong>奈米畫布 / 鏡面薄餅</strong>：將矽晶棒切片並拋光成表面粗糙度小於 0.1 奈米的超平整圓片。</td>
+  <td style="text-align:left"><a href="../processes/02-wafer-manufacturing.html">02-晶圓製造</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>薄膜沉積</strong></td>
+  <td style="text-align:left">Deposition</td>
+  <td style="text-align:left"><strong>原子級微觀噴漆</strong>：以氣體化學反應（CVD）或物理撞擊濺鍍（PVD）在晶圓表面鍍上奈米薄膜。</td>
+  <td style="text-align:left"><a href="../processes/03-thin-film-deposition.html">03-薄膜沉積</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>微影技術</strong></td>
+  <td style="text-align:left">Photolithography</td>
+  <td style="text-align:left"><strong>極限相片沖洗</strong>：用光阻、紫外光與光罩縮小投影，將奈米電路藍圖印在感光塗層上的核心工序。</td>
+  <td style="text-align:left"><a href="../processes/04-photolithography.html">04-微影技術</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>極紫外光微影</strong></td>
+  <td style="text-align:left">Extreme Ultraviolet Lithography (EUV)</td>
+  <td style="text-align:left"><strong>極短波長奈米刻刀</strong>：ASML 獨家研發波長僅 13.5 nm 的光源系統，突破先進製程微縮瓶頸。</td>
+  <td style="text-align:left"><a href="../processes/04-photolithography.html">04-微影技術</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>光阻</strong></td>
+  <td style="text-align:left">Photoresist</td>
+  <td style="text-align:left"><strong>感光防護膠</strong>：塗布在晶圓表面、被紫外光照射後化學性質改變的感光材料。</td>
+  <td style="text-align:left"><a href="../processes/04-photolithography.html">04-微影技術</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>光罩</strong></td>
+  <td style="text-align:left">Photomask / Reticle</td>
+  <td style="text-align:left"><strong>電路模板底片</strong>：鍍有不透光鉻金屬的超純石英玻璃板，承載放大的原始電路設計藍圖。</td>
+  <td style="text-align:left"><a href="../processes/04-photolithography.html">04-微影技術</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>蝕刻</strong></td>
+  <td style="text-align:left">Etching</td>
+  <td style="text-align:left"><strong>微觀精準雕刻刀</strong>：用電漿（乾蝕刻）或化學酸液（濕蝕刻）將未被光阻保護的區域挖掉雕琢成立體線路。</td>
+  <td style="text-align:left"><a href="../processes/05-etching.html">05-蝕刻製程</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>摻雜</strong></td>
+  <td style="text-align:left">Doping</td>
+  <td style="text-align:left"><strong>點石成金的滴墨法</strong>：用離子佈植機將微量硼（P型）或磷（N型）原子高速轟入矽晶格，建立電晶體。</td>
+  <td style="text-align:left"><a href="../processes/06-doping.html">06-摻雜技術</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>金屬連線</strong></td>
+  <td style="text-align:left">Metallization / Interconnects</td>
+  <td style="text-align:left"><strong>十層立體高架公路</strong>：利用銅雙鑲嵌製程（Dual Damascene）與導電通孔，將底層數十億個電晶體互聯成完整電路網絡。</td>
+  <td style="text-align:left"><a href="../processes/07-metallization.html">07-金屬導線</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>晶圓針測</strong></td>
+  <td style="text-align:left">Wafer Probing / Wafer Sort (CP)</td>
+  <td style="text-align:left"><strong>嚴苛品檢針</strong>：用顯微探針卡在晶圓切割前測試每顆晶粒的電氣訊號，標註不良品。</td>
+  <td style="text-align:left"><a href="../processes/08-packaging-and-testing.html">08-晶圓封裝</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>封裝</strong></td>
+  <td style="text-align:left">Packaging</td>
+  <td style="text-align:left"><strong>穿戴防護裝甲與引腳</strong>：將晶片切開後裝進耐撞耐溫的絕緣外殼，並拉出金屬接腳供主機板焊接。</td>
+  <td style="text-align:left"><a href="../processes/08-packaging-and-testing.html">08-晶圓封裝</a></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3>四、先進薄膜與電漿蝕刻關鍵術語（Lam Research 技術核心）</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">繁體中文術語</th>
+  <th style="text-align:left">英文全稱與縮寫</th>
+  <th style="text-align:left">生活化比喻 / 白話定義</th>
+  <th style="text-align:left">關聯頁面</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>原子層沉積</strong></td>
+  <td style="text-align:left">Atomic Layer Deposition (ALD)</td>
+  <td style="text-align:left"><strong>單原子層自限堆積</strong>：利用兩種前驅氣體交替注入與吹洗，以自限性表面化學反應每次精準生長單一原子層厚度；ALD 具有優異保形性，可在適當製程條件下形成高度均勻薄膜。</td>
+  <td style="text-align:left"><a href="../processes/03-thin-film-deposition.html">03-薄膜沉積</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>原子層蝕刻</strong></td>
+  <td style="text-align:left">Atomic Layer Etching (ALE)</td>
+  <td style="text-align:left"><strong>原子級微觀剝洋蔥</strong>：ALD 的反向製程。先讓氣體化學吸附於最表面原子層改質，再以微弱離子脫附排出，實現單原子層級材料移除。</td>
+  <td style="text-align:left"><a href="../processes/05-etching.html">05-蝕刻製程</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>離子-中性粒子協同效應</strong></td>
+  <td style="text-align:left">Ion-Neutral Synergy</td>
+  <td style="text-align:left"><strong>化學反應與動能雙劍合璧</strong>：Lam 前 CTO Rick Gottscho 命名之原理。垂直高能離子提供活化能，中性自由基迅速生成揮發性氣體，兼具超高蝕刻速率、高選擇比與垂直陡峭側壁。</td>
+  <td style="text-align:left"><a href="../processes/05-etching.html">05-蝕刻製程</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>電化學沉積</strong></td>
+  <td style="text-align:left">Electrochemical Deposition (ECD)</td>
+  <td style="text-align:left"><strong>微觀奈米電鍍</strong>：將晶圓浸入金屬電鍍液通電，利用陽離子還原在極微小溝槽內均勻填滿無孔隙純銅導線。</td>
+  <td style="text-align:left"><a href="../processes/03-thin-film-deposition.html">03-薄膜沉積</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>電漿增強 CVD</strong></td>
+  <td style="text-align:left">Plasma-Enhanced CVD (PECVD)</td>
+  <td style="text-align:left"><strong>低溫節能薄膜爐</strong>：利用電漿高能電子分解氣體，大幅降低化學沉積所需溫度，保護底層金屬導線不被高溫熔毀。</td>
+  <td style="text-align:left"><a href="../processes/03-thin-film-deposition.html">03-薄膜沉積</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>蝕刻選擇比</strong></td>
+  <td style="text-align:left">Selectivity</td>
+  <td style="text-align:left"><strong>靶向專一攻擊力</strong>：目標材料蝕刻速率與保護遮罩蝕刻速率的比值。高選擇比確保遮罩不被過早吃穿。</td>
+  <td style="text-align:left"><a href="../processes/05-etching.html">05-蝕刻製程</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>深寬比</strong></td>
+  <td style="text-align:left">Aspect Ratio (AR)</td>
+  <td style="text-align:left"><strong>奈米摩天深井比例</strong>：溝槽或通孔的深度與開口寬度之比值。3D NAND 垂直孔道深寬比常高達 40:1 至 60:1。</td>
+  <td style="text-align:left"><a href="../processes/05-etching.html">05-蝕刻製程</a></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>參考資料來源（Citations）</h2>
+<ul>
+<li><code>SRC-001</code>: ASML, <em>The Basics of Microchips</em> (2024). <a href="https://www.asml.com/en/technology/all-about-microchips/microchip-basics">URL</a></li>
+<li><code>SRC-002</code>: imec, <em>How Are Microchips Made?</em> (2024). <a href="https://www.imec-int.com/en/what-we-offer/semiconductor-education-and-workforce-development/microchips/how-are-microchips-made">URL</a></li>
+<li><code>SRC-003</code>: Lam Research, <em>Deposition Essentials (Semi 101)</em> (2024). <a href="https://newsroom.lamresearch.com/Deposition-Essentials-Semi-101">URL</a></li>
+<li><code>SRC-004</code>: Lam Research, <em>Etch Essentials: The Building Blocks of AI Era Microchips (Semi 101)</em> (2024). <a href="https://newsroom.lamresearch.com/etch-essentials-semiconductor-manufacturing">URL</a></li>
+</ul>
+</article><p class="footnote" style="margin-top:16px">此頁整理自原始 Wiki，部分進階細節仍有待補充來源。以原始資料及檢查矩陣為準。</p></div></div></main><footer class="site-footer"><div><strong>SAND / SILICON</strong><span>從資料到知識，從知識到教學。2026</span></div><div>教學示意非真實晶片尺寸　·　資料來源可追溯　·　<a href="../../sources.html">來源與使用限制</a></div></footer><script src="../../assets/site.js" defer></script></body></html>

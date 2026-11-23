@@ -1,0 +1,101 @@
+<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#081527"><meta name="description" content="從沙子到晶片：半導體製造 LLM Wiki"><title>Wiki 更新紀錄｜Sand to Silicon</title><link rel="stylesheet" href="../assets/site.css"></head><body><div class="ambient-glow"></div><header class="site-header"><div class="header-inner"><a class="brand" href="../index.html" aria-label="回到網站首頁"><span class="brand-mark"><span class="mark-core"></span><span class="mark-pins"></span></span><span class="brand-name">SAND<span class="brand-sep">/</span>SILICON<small>半導體製造 LLM Wiki</small></span></a><button id="menuToggle" class="menu-toggle" aria-label="開啟導覽" aria-expanded="false">☰</button><nav id="globalNav" class="global-nav" aria-label="主要導覽"><a class="nav-link " href="../index.html">探索首頁</a><a class="nav-link active" href="../wiki/index.html">知識 Wiki</a><a class="nav-link " href="../slides/index.html">互動簡報</a><a class="nav-link " href="../sources.html">資料來源</a><a class="nav-link " href="../workflow.html">工作流程</a><a class="nav-link " href="../evidence.html">檢查紀錄</a></nav></div></header><main><div class="container"><div class="page-title"><span class="section-kicker">CHANGELOG</span><h1>Wiki 更新歷程</h1></div><article class="paper"><h1>Wiki 歷程日誌 (Wiki Changelog)</h1>
+<p>本文件依循 Andrej Karpathy 的 LLM Wiki 規範，為只允許追加（Append-only）的 Wiki 變更紀錄日誌。每當 AI Agent 執行資料攝入、頁面新增、內容修訂或衝突修正時，均必須在此記錄變更歷程。</p>
+<hr />
+<h2>變更紀錄格式說明</h2>
+<p>每次更新記錄包含下列欄位：</p>
+<ul>
+<li><strong>日期時間 (Timestamp)</strong>: <code>YYYY-MM-DD HH:MM:SS</code> (當地時間)</li>
+<li><strong>操作類型 (Action)</strong>: <code>INIT</code> (初始化), <code>INGEST</code> (資料攝入), <code>UPDATE</code> (內容擴充/修正), <code>LINT_FIX</code> (結構修復)</li>
+<li><strong>資料來源代碼 (Source ID)</strong>: 對應於 <code>sources/manifest.json</code> 的來源 ID；若為結構調整則填 <code>INTERNAL</code> 或 <code>SYSTEM</code></li>
+<li><strong>影響檔案 (Target Files)</strong>: 受影響的 Markdown 檔案列表</li>
+<li><strong>更新摘要 (Summary)</strong>: 具體說明白話內容、概念增修或修正之重點</li>
+</ul>
+<hr />
+<h2>歷程紀錄列表</h2>
+<h3>[2026-11-18 14:38:00] - 專案知識庫初始化 (Stage 1)</h3>
+<ul>
+<li><strong>操作類型</strong>: <code>INIT</code></li>
+<li><strong>資料來源代碼</strong>: <code>SYSTEM_INIT</code></li>
+<li><strong>影響檔案</strong>:<ul>
+<li><code>wiki/index.md</code></li>
+<li><code>wiki/log.md</code></li>
+</ul>
+</li>
+<li><strong>更新摘要</strong>:<ul>
+<li>建立 Wiki 知識入口首頁 (<code>wiki/index.md</code>)，涵蓋半導體製造八大旅程地圖與四層分類架構（concepts, processes, equipment, glossary）。</li>
+<li>建立 Wiki 歷程日誌 (<code>wiki/log.md</code>) 作為未來知識編譯之追蹤基準。</li>
+<li>目前尚未攝入外部原始資料，待 Stage 2 引入權威來源後開始依序編譯實體頁面。</li>
+</ul>
+</li>
+</ul>
+<h3>[2026-11-23 10:25:00] - 第一批權威資料攝入與 Wiki 知識編譯 (Stage 2 - Batch 01)</h3>
+<ul>
+<li><strong>操作類型</strong>: <code>INGEST</code></li>
+<li><strong>資料來源代碼</strong>: <code>SRC-001</code> (ASML), <code>SRC-002</code> (imec)</li>
+<li><strong>影響檔案</strong>:<ul>
+<li><code>sources/manifest.json</code> (登錄兩篇來源中繼資料與真實 SHA256)</li>
+<li><code>wiki/concepts/microchip-basics.md</code> (新增微晶片與積體電路基礎)</li>
+<li><code>wiki/concepts/nanoscale-and-moore.md</code> (新增奈米微觀尺度與摩爾定律)</li>
+<li><code>wiki/concepts/cleanroom-standards.md</code> (新增無塵室環境標準)</li>
+<li><code>wiki/processes/01-silicon-refining.md</code> (新增矽原料提取與提純)</li>
+<li><code>wiki/processes/02-wafer-manufacturing.md</code> (新增晶圓長晶與切片)</li>
+<li><code>wiki/processes/03-thin-film-deposition.md</code> (新增薄膜沉積技術)</li>
+<li><code>wiki/processes/04-photolithography.md</code> (新增微影技術與 EUV)</li>
+<li><code>wiki/processes/05-etching.md</code> (新增蝕刻製程)</li>
+<li><code>wiki/processes/06-doping.md</code> (新增摻雜技術與電晶體構建)</li>
+<li><code>wiki/processes/07-metallization.md</code> (新增金屬導線與層間互連)</li>
+<li><code>wiki/processes/08-packaging-and-testing.md</code> (新增晶圓封裝與測試)</li>
+<li><code>wiki/glossary/terms.md</code> (新增核心術語與生活比喻辭典)</li>
+<li><code>wiki/index.md</code> (更新首頁導覽，串接所有實體頁面連結)</li>
+</ul>
+</li>
+<li><strong>更新摘要</strong>:<ul>
+<li>正式攝入 ASML 與 imec 官方第一手教學文獻，驗證 Checksum 並固化於 <code>raw/</code> 與 <code>sources/manifest.json</code>。</li>
+<li>完整編譯半導體基礎概念、無塵室環境及八大核心製造流程，全面保留英文專業術語（IC, EUV, CVD, PVD, RIE, MOSFET, CMP 等）並附帶直觀生活化比喻。</li>
+<li>完成所有 Markdown 頁面之 YAML Frontmatter、來源標記、前置條件與相關頁面雙向串連。</li>
+</ul>
+</li>
+</ul>
+<h3>[2026-11-23 10:43:00] - 第二批權威資料攝入與 Wiki 專業深化 (Stage 2 - Batch 02)</h3>
+<ul>
+<li><strong>操作類型</strong>: <code>INGEST</code></li>
+<li><strong>資料來源代碼</strong>: <code>SRC-003</code> (Lam Research), <code>SRC-004</code> (Lam Research)</li>
+<li><strong>影響檔案</strong>:<ul>
+<li><code>sources/manifest.json</code> (登錄 Lam Research 兩篇文獻與真實 SHA256)</li>
+<li><code>wiki/processes/03-thin-film-deposition.md</code> (擴充 ALD 自限性反應、PECVD 低溫優勢、ECD 電鍍填孔)</li>
+<li><code>wiki/processes/05-etching.md</code> (擴充乾蝕刻物理/化學機制、Ion-Neutral Synergy 協同效應、ALE 原子層蝕刻、選擇比與深寬比)</li>
+<li><code>wiki/glossary/terms.md</code> (新增 ALD, ALE, Ion-Neutral Synergy, ECD, PECVD, Selectivity, Aspect Ratio 等 7 項術語)</li>
+<li><code>wiki/index.md</code> (更新導航索引與來源列表)</li>
+</ul>
+</li>
+<li><strong>更新摘要</strong>:<ul>
+<li>成功引入半導體薄膜沉積與蝕刻設備龍頭 Lam Research 官方技術文獻，完成 SHA256 驗證並登記於 Manifest。</li>
+<li>正式解決 Batch 01 中標記為 NEEDS_REVIEW 的「原子層沉積（ALD）」與「乾蝕刻 RIE 物理/化學/選擇比機制」，提供完整的第一手官方文獻證據，狀態成功提升為 PASS。</li>
+<li>保留 6 項非 Lam Research 範疇的待查項目（如西門子法、柴式長晶、CMP、退火、銅雙鑲嵌製程命名與 EUV 波長數值），持續標註為 NEEDS_REVIEW 待後續批次官方資料補強。</li>
+</ul>
+</li>
+</ul>
+<h3>[2026-11-23 10:50:00] - Batch 02 提交前局部修正：ALD 保形性精確化與銅雙鑲嵌術語統一 (Local Patch)</h3>
+<ul>
+<li><strong>操作類型</strong>: <code>LOCAL_PATCH</code></li>
+<li><strong>影響檔案</strong>:<ul>
+<li><code>wiki/processes/03-thin-film-deposition.md</code></li>
+<li><code>wiki/processes/07-metallization.md</code></li>
+<li><code>wiki/glossary/terms.md</code></li>
+<li><code>wiki/index.md</code></li>
+</ul>
+</li>
+<li><strong>更新摘要</strong>:<ul>
+<li>修正 ALD 保形性敘述：由宣稱「100% 完美保形」修訂為符合 Lam Research SRC-003 原文之「ALD 具有優異保形性，可在適當製程條件下形成高度均勻薄膜」，避免對所有製程作絕對宣稱。</li>
+<li>統一技術用語：將「銅雙波紋製程」全面修正為台灣半導體產業標準術語「銅雙鑲嵌製程（Dual Damascene）」。</li>
+</ul>
+</li>
+</ul>
+<h2>2026-11-23 — Batch 03 (ChatGPT assisted, imported archive)</h2>
+<ul>
+<li>依使用者上傳的 ZIP 中<strong>既存</strong> <code>raw/SRC-005*.html</code> 與 <code>raw/SRC-006*.html</code>，在獨立的協作副本中驗證內容並新增到 <code>sources/manifest.json</code>。本次沒有聲稱 Antigravity 重新下載或執行 Git Commit。</li>
+<li>新增 SRC-005 / SRC-006 引用並增量修改 <code>concepts/nanoscale-and-moore.md</code>、<code>processes/04-photolithography.md</code>、<code>processes/08-packaging-and-testing.md</code>、<code>wiki/index.md</code>。</li>
+<li>REV-08（EUV 13.5 nm / DUV 193 nm）：依 SRC-005 轉為有來源支持。REV-03～REV-07 保持待查。詳見 <code>evidence/consistency/batch03_source_fidelity.md</code>。</li>
+<li>建立 <code>website/</code> 靜態教學站與 12 頁簡報；產生過程在 <code>logs/assisted_completion_2026-11-23.md</code> 與 <code>evidence/lint/assisted_build_check.md</code> 分開記錄。</li>
+</ul>
+</article></div></main><footer class="site-footer"><div><strong>SAND / SILICON</strong><span>從資料到知識，從知識到教學。2026</span></div><div>教學示意非真實晶片尺寸　·　資料來源可追溯　·　<a href="../sources.html">來源與使用限制</a></div></footer><script src="../assets/site.js" defer></script></body></html>

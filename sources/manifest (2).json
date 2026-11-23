@@ -1,0 +1,74 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "SandToSiliconSourceManifest",
+  "description": "半導體製造知識庫之不可變原始資料來源清單 (Immutable Raw Sources Manifest)",
+  "version": "1.0.0",
+  "sources": [
+    {
+      "id": "SRC-001",
+      "title": "The Basics of Microchips",
+      "author_organization": "ASML",
+      "url": "https://www.asml.com/en/technology/all-about-microchips/microchip-basics",
+      "filepath": "raw/SRC-001_asml_microchip_basics.html",
+      "verification_date": "2026-11-23",
+      "checksum": "c8e30194b556144a822519ade1c626ab688b64cb3561b95c4b5031aa05220a81",
+      "checksum_algorithm": "SHA256",
+      "summary": "ASML 官方微晶片基礎教學文獻，闡釋微晶片定義、電晶體作為微型電流開關之機制、矽原料作為半導體之特性（摻雜硼與磷改變導電度）、二氧化矽砂石融熔鑄造為晶棒（Ingot）並切片為晶圓（Wafer）、奈米微觀尺度與 ASML 極紫外光微影（EUV）技術之角色、數位晶片與類比晶片區別、邏輯晶片（CPU/GPU/NPU）與記憶體晶片（DRAM/NAND）分類、摩爾定律，以及 ASML 本身專注於微影設備製造而非生產晶片之分工事實。"
+    },
+    {
+      "id": "SRC-002",
+      "title": "How Are Microchips Made?",
+      "author_organization": "imec",
+      "url": "https://www.imec-int.com/en/what-we-offer/semiconductor-education-and-workforce-development/microchips/how-are-microchips-made",
+      "filepath": "raw/SRC-002_imec_how_are_microchips_made.html",
+      "verification_date": "2026-11-23",
+      "checksum": "7a7ab16165b79b5b527c1514495fa4680d4339f638b9dad4ddbbefcf3b807889",
+      "checksum_algorithm": "SHA256",
+      "summary": "比利時頂尖半導體研究中心 imec 官方製程教學文獻，詳解從沙子到晶片的製造流程：步驟一矽原料提純與晶圓切片拋光；步驟二薄膜沉積（化學氣相沉積 CVD 與物理氣相沉積 PVD）；步驟三光阻塗布與紫外光曝光微影；步驟四化學或電漿蝕刻去除材料雕琢電路；步驟五摻雜雜質建立 P 型與 N 型載子以構成電晶體元件；步驟二至五反覆循環數百次以堆疊電晶體與金屬導線；奈米極限尺寸與無塵室環境嚴苛控管；步驟六晶圓嚴格測試、切割獨立晶粒、打線封裝與接腳整合，以及積體電路設計與全球半導體分工生態系。"
+    },
+    {
+      "id": "SRC-003",
+      "title": "Deposition Essentials (Semi 101)",
+      "author_organization": "Lam Research",
+      "url": "https://newsroom.lamresearch.com/Deposition-Essentials-Semi-101",
+      "filepath": "raw/SRC-003_lam_deposition_essentials.html",
+      "verification_date": "2026-11-23",
+      "checksum": "893b96813f50bcae9ae2c8afa5cad01280f62c278ced389ad7b0a7dfbacbbb8d",
+      "checksum_algorithm": "SHA256",
+      "summary": "Lam Research 官方薄膜沉積技術專文，詳解金屬沉積（導電路徑鋪設）與介電質沉積（絕緣引流阻擋）之核心目的與生活比喻；深入對比常見沉積技術：化學氣相沉積（CVD）、物理氣相沉積（PVD/濺鍍限制與陰影效應）、電化學沉積（ECD 填補金屬孔隙）與紫外線熱處理（UVTP）；深入解說 CVD 衍生技術，包括電漿增強 CVD（PECVD 低溫優勢）、高密度電漿 CVD（HDP-CVD 無孔隙填補）以及原子層沉積（ALD：前驅氣體交替注入、自限性表面化學反應、原子層級精準厚度控制與 3D 結構高保形性）。"
+    },
+    {
+      "id": "SRC-004",
+      "title": "Etch Essentials: The Building Blocks of AI Era Microchips (Semi 101)",
+      "author_organization": "Lam Research",
+      "url": "https://newsroom.lamresearch.com/etch-essentials-semiconductor-manufacturing",
+      "filepath": "raw/SRC-004_lam_etch_essentials.html",
+      "verification_date": "2026-11-23",
+      "checksum": "8cf3b5f2a01494ccd860a79597763df36fa6ab30f27fde86350ff386d577d00a",
+      "checksum_algorithm": "SHA256",
+      "summary": "Lam Research 官方蝕刻技術專文，詳述蝕刻將光阻圖案雕琢成立體 3D 電路之本質（石雕比喻）；系統性對比濕蝕刻（液態化學溶解、等向性側蝕限制）與乾蝕刻（真空電漿、非等向性垂直方向性）；深入解析物理撞擊（濺射脫附）與化學反應（自由基生成揮發性氣體如四氟化矽 SiF4）之兩大機理；提出由 Lam 前 CTO Rick Gottscho 命名的『離子-中性粒子協同效應（Ion-Neutral Synergy）』，結合物理激活與化學揮發實現高速垂直側壁輪廓；詳解原子層蝕刻（ALE：自限性吸附與解吸脫附，實現單原子層級材料移除）、選擇比（Selectivity）、高深寬比（High Aspect Ratio, HAR）與電感耦合/電容耦合電漿機台設計。"
+    },
+    {
+      "id": "SRC-005",
+      "title": "Light & lasers - Lithography principles",
+      "author_organization": "ASML",
+      "url": "https://www.asml.com/en/technology/lithography-principles/light-and-lasers",
+      "filepath": "raw/SRC-005_asml_light_and_lasers.html",
+      "verification_date": "2026-11-23",
+      "checksum": "ebefb11fe5b4b5eb8d2839eaf2232c305f4086df1308be713f6c0815ea666423",
+      "checksum_algorithm": "SHA256",
+      "summary": "ASML 官方光源教學文章：解釋波長與微影可解析圖案尺寸的關係；ArF 深紫外光 DUV 193 nm；極紫外光 EUV 13.5 nm。"
+    },
+    {
+      "id": "SRC-006",
+      "title": "How Silicon Die Become Chip Packages",
+      "author_organization": "Intel",
+      "url": "https://www.intel.com/content/www/us/en/newsroom/tech101/manufacturing/how-silicon-die-become-chip-packages.html",
+      "filepath": "raw/SRC-006_intel_how_silicon_die_become_chip_packages.html",
+      "verification_date": "2026-11-23",
+      "checksum": "6620e6b42bbcd671e273640315b69ef06c16dc62b04c614b36ac516f1cb26a8d",
+      "checksum_algorithm": "SHA256",
+      "summary": "Intel 官方封裝與測試教學文章：介紹晶粒固定、環氧樹脂填隙、散熱蓋、Burn-in、電性測試與平台驗證六個階段。"
+    }
+  ]
+}

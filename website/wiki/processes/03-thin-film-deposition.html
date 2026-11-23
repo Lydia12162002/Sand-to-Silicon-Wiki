@@ -1,0 +1,90 @@
+<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#081527"><meta name="description" content="從沙子到晶片：半導體製造 LLM Wiki"><title>薄膜沉積技術｜Sand to Silicon</title><link rel="stylesheet" href="../../assets/site.css"></head><body><div class="ambient-glow"></div><header class="site-header"><div class="header-inner"><a class="brand" href="../../index.html" aria-label="回到網站首頁"><span class="brand-mark"><span class="mark-core"></span><span class="mark-pins"></span></span><span class="brand-name">SAND<span class="brand-sep">/</span>SILICON<small>半導體製造 LLM Wiki</small></span></a><button id="menuToggle" class="menu-toggle" aria-label="開啟導覽" aria-expanded="false">☰</button><nav id="globalNav" class="global-nav" aria-label="主要導覽"><a class="nav-link " href="../../index.html">探索首頁</a><a class="nav-link active" href="../../wiki/index.html">知識 Wiki</a><a class="nav-link " href="../../slides/index.html">互動簡報</a><a class="nav-link " href="../../sources.html">資料來源</a><a class="nav-link " href="../../workflow.html">工作流程</a><a class="nav-link " href="../../evidence.html">檢查紀錄</a></nav></div></header><main><div class="wiki-layout"><aside class="wiki-aside"><h3>知識導覽</h3><a href="../index.html">⌂ 回到 Wiki 入口</a><a class="" href="../processes/07-metallization.html">金屬導線與層間互連</a><a class="" href="../processes/05-etching.html">蝕刻製程</a><a class="" href="../processes/06-doping.html">摻雜技術與電晶體構建</a><a class="" href="../processes/02-wafer-manufacturing.html">晶圓長晶與切片</a><a class="current" href="../processes/03-thin-film-deposition.html">薄膜沉積技術</a><a class="" href="../processes/08-packaging-and-testing.html">晶圓封裝與測試</a><a class="" href="../processes/04-photolithography.html">微影技術</a><a class="" href="../processes/01-silicon-refining.html">矽原料提取與提純</a><a class="" href="../concepts/nanoscale-and-moore.html">奈米微觀尺度與摩爾定律</a><a class="" href="../concepts/microchip-basics.html">微晶片與積體電路基礎</a><a class="" href="../concepts/cleanroom-standards.html">無塵室與半導體製造環境</a><a class="" href="../glossary/terms.html">半導體核心術語與生活化比喻辭典</a><a href="../../sources.html">資料來源清單 ↗</a></aside><div class="wiki-main"><div class="article-title"><span class="section-kicker">WIKI / 製造流程</span><h1>薄膜沉積技術</h1><p>Thin Film Deposition: Building Microchip Layers</p><div class="article-tags"><a class="tag" href="../../sources.html#SRC-001">SRC-001 · ASML</a><a class="tag" href="../../sources.html#SRC-002">SRC-002 · imec</a><a class="tag" href="../../sources.html#SRC-003">SRC-003 · Lam Research</a></div></div><article class="paper"><h1>薄膜沉積技術 (Thin Film Deposition)</h1>
+<blockquote>
+<p>[!NOTE]
+<strong>白話摘要與直覺比喻</strong><br />
+<strong>一句話定義</strong>：薄膜沉積（Deposition）是將導電金屬、半導體或絕緣介電質等不同特性的材料，以原子或分子為單位，均勻鍍在晶圓表面形成奈米級超薄保護層或電氣層的工序。<br />
+<strong>生活化比喻（Lam Research 交通比喻）</strong>：薄膜沉積主要有兩大目的：</p>
+<ol>
+<li><strong>金屬沉積（Metal Deposition）</strong>：如同在城市中<strong>鋪設允許車輛順暢通行的高速公路</strong>，打造低電阻的導電路徑。</li>
+<li><strong>介電質沉積（Dielectric Deposition）</strong>：如同在道路旁<strong>架設安全護欄與交通引導障礙物</strong>，將不該通電的地方徹底絕緣，防止訊號漏電與短路。</li>
+</ol>
+</blockquote>
+<hr />
+<h2>核心原理與科學機制</h2>
+<p>依據 imec (SRC-002) 與全球沉積設備大廠 Lam Research (SRC-003) 的權威技術手冊，微晶片是由數千道製程重複堆疊而成。沉積的核心考量在於材料種類、電氣功能，以及晶圓表面是平坦的（Planar）還是具備深孔與溝槽的立體形貌（Topography）。</p>
+<h3>1. 常見沉積方法（Common Methods）</h3>
+<h4>(1) 化學氣相沉積（Chemical Vapor Deposition, CVD）</h4>
+<ul>
+<li><strong>機制</strong>：在高溫反應腔中導入含目標元素的反應性前驅氣體（Precursor Gases）。高溫促使氣體分子分解或發生化學反應，在晶圓表面生成固態薄膜，廢氣副產物則被真空泵抽除。</li>
+<li><strong>特點</strong>：可沉積導體、半導體與絕緣介電質（如二氧化矽 $\text{SiO}_2$）。階梯覆蓋能力佳，能均勻沉積在平面與立體結構上。</li>
+</ul>
+<h4>(2) 物理氣相沉積（Physical Vapor Deposition, PVD / 濺鍍 Sputtering）</h4>
+<ul>
+<li><strong>機制</strong>：在真空腔內利用高能離子轟擊金屬靶材，以物理撞擊將靶材原子擊出（Sputtering），原子飛越真空並附著在晶圓表面凝結成膜。部分原子可被離子化以施加電場引導方向。</li>
+<li><strong>特點與限制</strong>：材料適應廣、成本低（無需特殊化學氣體）；但因為原子主要從上方灑落，在立體深孔中會產生<strong>陰影效應（Shadowing Effects）</strong>，導致深孔側壁與底部厚度不均或產生空隙（Voids）。因此 PVD 通常受限於超薄襯層（Liners）或無高低起伏的平面沉積。</li>
+</ul>
+<h4>(3) 電化學沉積（Electrochemical Deposition, ECD）</h4>
+<ul>
+<li><strong>機制</strong>：將晶圓浸入含有金屬陽離子的化學電鍍液中並通電，帶正電的金屬離子受吸引還原沉積在晶圓表面。</li>
+<li><strong>特點</strong>：類似汽車保險桿鍍鉻的高科技微觀親戚。具備極強的深孔填平能力，能精準在晶片奈米級的極微細縫隙中填充高品質、無孔隙（Void-free）的導電金屬（如銅互連導線）。</li>
+</ul>
+<hr />
+<h3>2. CVD 衍生技術與原子層沉積（ALD）</h3>
+<p>Lam Research (SRC-003) 指出，隨著晶片結構微縮至立體奈米維度，傳統熱 CVD 面臨高溫破壞底層金屬的瓶頸，因而催生了先進衍生技術：</p>
+<h4>(1) 電漿增強化學氣相沉積（Plasma-Enhanced CVD, PECVD）</h4>
+<ul>
+<li>利用電漿（Plasma）中的高能電子來激發並分解前驅氣體，取代單純的熱能。</li>
+<li><strong>關鍵優勢</strong>：能在<strong>低溫環境</strong>下沉積出高品質薄膜。這對後段製程至關重要，因為過高的溫度會使下層已做好的銅導線熔化或絕緣層劣化。</li>
+</ul>
+<h4>(2) 高密度電漿化學氣相沉積（High-Density Plasma CVD, HDP-CVD）</h4>
+<ul>
+<li>在同一個腔體內同時進行「化學沉積」與「物理氬離子濺射打磨」。</li>
+<li>藉由濺射不斷削平深槽開口處的過早堆積，實現由下而上的無孔隙深溝填補。</li>
+</ul>
+<h4>(3) 原子層沉積（Atomic Layer Deposition, ALD）</h4>
+<p><em>(本項已由 Lam Research SRC-003 官方文獻完整證實)</em></p>
+<ul>
+<li><strong>自限性表面化學反應（Self-Limiting Reactions）</strong>：<ol>
+<li><strong>脈衝注入前驅物 A</strong>：氣體分子進入腔體並與晶圓表面活性基團發生化學吸附（Adsorption）。一旦整個表面被單一層分子佔滿（飽和），反應自動停止（Self-limiting）。</li>
+<li><strong>吹洗（Purge）</strong>：以惰性氣體將腔內多餘的前驅物 A 與未反應氣體徹底排空。</li>
+<li><strong>脈衝注入前驅物 B</strong>：氣體 B 進入並與吸附在表面的前驅物 A 發生反應，生成目標化合物薄膜（如氧化鋁、氧化鉿等高介電質）。</li>
+<li><strong>吹洗（Purge）</strong>：排空副產物與多餘氣體 B。</li>
+</ol>
+</li>
+<li><strong>核心優勢</strong>：<ul>
+<li><strong>原子級精準厚度</strong>：重複上述四步循環，每次循環精確生長單一原子或分子層厚度（約 0.1 奈米）。</li>
+<li><strong>優異的保形性（Conformality）</strong>：ALD 具有優異保形性，可在適當製程條件下形成高度均勻薄膜，覆蓋複雜高深寬比溝槽或 3D 立體結構表面。</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2>關鍵技術參數與工作條件</h2>
+<ul>
+<li><strong>腔體環境</strong>：高真空至超高真空（$10^{-3} \sim 10^{-7} \text{ Torr}$），防止空氣雜質混入薄膜。</li>
+<li><strong>薄膜厚度控制</strong>：ALD 可實現原子層級（$0.1 \text{ nm}$）精準增厚，全晶圓厚度均勻度誤差小於 1%。</li>
+<li><strong>製程溫度</strong>：熱 CVD 約 $400^\circ\text{C} \sim 800^\circ\text{C}$；PECVD 則可壓低至 $200^\circ\text{C} \sim 400^\circ\text{C}$。</li>
+</ul>
+<hr />
+<h2>上下游製程關聯</h2>
+<ul>
+<li><strong>前置階段</strong>：經過清洗與拋光的 <a href="02-wafer-manufacturing.html">02-晶圓長晶與切片</a> 裸矽晶圓，或剛完成前一層蝕刻與摻雜的半成品晶圓。</li>
+<li><strong>後續製程</strong>：沉積好新薄膜的晶圓，隨即送入 <a href="04-photolithography.html">04-微影技術</a> 塗布光阻與曝光，定義出新一層的電路幾何線路。</li>
+</ul>
+<hr />
+<h2>常見迷思與 FAQ</h2>
+<blockquote>
+<p><strong>Q1：薄膜沉積只在晶圓製造初期做一次嗎？</strong><br />
+<strong>A1</strong>：不是。imec (SRC-002) 與 Lam Research (SRC-003) 強調，薄膜沉積與蝕刻在整片晶圓的製造過程中會<strong>循環重複數十次到數百次</strong>！從最底層的電晶體微觀結構，到頂部多達十餘層的金屬互連高速公路，每一層都需要先沉積薄膜，再雕刻成型。</p>
+</blockquote>
+<blockquote>
+<p><strong>Q2：PVD 既然成本低，為什麼不能全面取代 CVD 與 ALD？</strong><br />
+<strong>A2</strong>：如 Lam Research (SRC-003) 所指出，PVD 是由上往下的「定向撞擊噴灑」，在立體溝槽中會產生嚴重的陰影效應，無法均勻包覆深孔側壁。唯有化學氣相沉積（CVD）與自限性的原子層沉積（ALD），氣體分子才能在所有微觀角落均勻擴散反應，形成高度均勻且無孔隙的優異保形薄膜。</p>
+</blockquote>
+<hr />
+<h2>參考資料來源（Citations）</h2>
+<ul>
+<li><code>SRC-001</code>: ASML, <em>The Basics of Microchips</em> (2024). <a href="https://www.asml.com/en/technology/all-about-microchips/microchip-basics">URL</a></li>
+<li><code>SRC-002</code>: imec, <em>How Are Microchips Made?</em> (2024). <a href="https://www.imec-int.com/en/what-we-offer/semiconductor-education-and-workforce-development/microchips/how-are-microchips-made">URL</a></li>
+<li><code>SRC-003</code>: Lam Research, <em>Deposition Essentials (Semi 101)</em> (2024). <a href="https://newsroom.lamresearch.com/Deposition-Essentials-Semi-101">URL</a></li>
+</ul>
+</article><p class="footnote" style="margin-top:16px">此頁整理自原始 Wiki，部分進階細節仍有待補充來源。以原始資料及檢查矩陣為準。</p></div></div></main><footer class="site-footer"><div><strong>SAND / SILICON</strong><span>從資料到知識，從知識到教學。2026</span></div><div>教學示意非真實晶片尺寸　·　資料來源可追溯　·　<a href="../../sources.html">來源與使用限制</a></div></footer><script src="../../assets/site.js" defer></script></body></html>

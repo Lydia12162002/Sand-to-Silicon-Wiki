@@ -1,0 +1,53 @@
+<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#081527"><meta name="description" content="從沙子到晶片：半導體製造 LLM Wiki"><title>矽原料提取與提純｜Sand to Silicon</title><link rel="stylesheet" href="../../assets/site.css"></head><body><div class="ambient-glow"></div><header class="site-header"><div class="header-inner"><a class="brand" href="../../index.html" aria-label="回到網站首頁"><span class="brand-mark"><span class="mark-core"></span><span class="mark-pins"></span></span><span class="brand-name">SAND<span class="brand-sep">/</span>SILICON<small>半導體製造 LLM Wiki</small></span></a><button id="menuToggle" class="menu-toggle" aria-label="開啟導覽" aria-expanded="false">☰</button><nav id="globalNav" class="global-nav" aria-label="主要導覽"><a class="nav-link " href="../../index.html">探索首頁</a><a class="nav-link active" href="../../wiki/index.html">知識 Wiki</a><a class="nav-link " href="../../slides/index.html">互動簡報</a><a class="nav-link " href="../../sources.html">資料來源</a><a class="nav-link " href="../../workflow.html">工作流程</a><a class="nav-link " href="../../evidence.html">檢查紀錄</a></nav></div></header><main><div class="wiki-layout"><aside class="wiki-aside"><h3>知識導覽</h3><a href="../index.html">⌂ 回到 Wiki 入口</a><a class="" href="../processes/07-metallization.html">金屬導線與層間互連</a><a class="" href="../processes/05-etching.html">蝕刻製程</a><a class="" href="../processes/06-doping.html">摻雜技術與電晶體構建</a><a class="" href="../processes/02-wafer-manufacturing.html">晶圓長晶與切片</a><a class="" href="../processes/03-thin-film-deposition.html">薄膜沉積技術</a><a class="" href="../processes/08-packaging-and-testing.html">晶圓封裝與測試</a><a class="" href="../processes/04-photolithography.html">微影技術</a><a class="current" href="../processes/01-silicon-refining.html">矽原料提取與提純</a><a class="" href="../concepts/nanoscale-and-moore.html">奈米微觀尺度與摩爾定律</a><a class="" href="../concepts/microchip-basics.html">微晶片與積體電路基礎</a><a class="" href="../concepts/cleanroom-standards.html">無塵室與半導體製造環境</a><a class="" href="../glossary/terms.html">半導體核心術語與生活化比喻辭典</a><a href="../../sources.html">資料來源清單 ↗</a></aside><div class="wiki-main"><div class="article-title"><span class="section-kicker">WIKI / 製造流程</span><h1>矽原料提取與提純</h1><p>Silicon Refining: From Sand to Electronic Grade Silicon</p><div class="article-tags"><a class="tag" href="../../sources.html#SRC-001">SRC-001 · ASML</a><a class="tag" href="../../sources.html#SRC-002">SRC-002 · imec</a></div></div><article class="paper"><h1>矽原料提取與提純 (Silicon Refining)</h1>
+<blockquote>
+<p>[!NOTE]
+<strong>白話摘要與直覺比喻</strong><br />
+<strong>一句話定義</strong>：矽原料提純是將自然界沙石中的二氧化矽（$\text{SiO}_2$），經由化學還原與多重精餾，提煉成純度高達 99.9999999%（九個 9）的電子級多晶矽之起點工序。<br />
+<strong>生活化比喻</strong>：想像你在海邊抓起一把沙子，裡面混雜了各種泥土、貝殼與雜質。矽提純就像是一場極致的「化學大掃除」：先把沙子熔化去除氧氣，再把矽變成氣體反覆蒸餾，直到幾百公噸的純矽裡，雜質少到像是在一整座標準游泳池中只容許丟入一顆微小的砂糖！</p>
+</blockquote>
+<hr />
+<h2>核心原理與科學機制</h2>
+<p>ASML (SRC-001) 與 imec (SRC-002) 皆明確指出，所有晶片的起點都源自於最平凡無奇的自然物質——<strong>沙子（Sand）</strong>。</p>
+<h3>1. 自然界中的矽：二氧化矽（Silica Sand）</h3>
+<p>沙灘上的石英砂主要成分是<strong>二氧化矽（Silicon Dioxide, $\text{SiO}_2$）</strong>。矽（Si）在自然界中與氧原子牢固地結合在一起，無法直接用於製造晶片，必須先透過化學冶煉將氧分離。</p>
+<h3>2. 冶金級矽（Metallurgical Grade Silicon, MGS）</h3>
+<p>將石英砂與純碳（焦炭）在高溫電弧爐（超過 $1,900^\circ\text{C}$）中共同加熱，碳奪取氧氣生成一氧化碳氣體逸出：
+$$\text{SiO}_2 + 2\text{C} \rightarrow \text{Si} + 2\text{CO} \uparrow$$
+此階段產出的矽純度約為 $98% \sim 99%$，被稱為冶金級矽，通常用於煉鋼或鋁合金，對晶片而言依然太髒。</p>
+<h3>3. 化學精餾與電子級多晶矽（Electronic Grade Silicon, EGS）</h3>
+<blockquote>
+<p>[!NOTE]
+<strong>待後續權威資料驗證 (NEEDS_REVIEW)</strong><br />
+關於「西門子製程（Siemens Process）」、「三氯矽烷化學反應式」與「純度 99.9999999% (9N~11N)」之具體化工細節，屬於業界標準實踐，但目前本批次之官方來源 SRC-001 (ASML) 與 SRC-002 (imec) 僅定性記載沙石熔煉提純與鑄造晶棒之核心事實，未列出具體化學反應式與 9N 數字標註。此部分標記為待驗證，待後續批次引入矽材料提煉官方文獻補強。</p>
+</blockquote>
+<p>為了達到晶片所需的極限純度，將冶金級矽與氯化氫氣體反應，轉化為沸點僅 $31.8^\circ\text{C}$ 的液態<strong>三氯矽烷（Trichlorosilane, $\text{SiHCl}_3$）</strong>：</p>
+<ul>
+<li>藉由蒸餾塔進行多次分餾，將所有微量沸點不同的金屬雜質徹底分離。</li>
+<li>最後在氫氣高溫環境下進行西門子製程（Siemens Process），使超純的三氯矽烷分解沉積出固體棒狀多晶矽。</li>
+<li><strong>純度標準</strong>：達到恐怖的 <strong>99.9999999% 至 99.999999999%</strong>（俗稱 9N 至 11N，即每十億至一千億個矽原子中，只允許存在一個非矽雜質原子）。</li>
+</ul>
+<hr />
+<h2>關鍵技術參數與工作條件</h2>
+<ul>
+<li><strong>反應爐溫度</strong>：$1,000^\circ\text{C} \sim 1,900^\circ\text{C}$。</li>
+<li><strong>純度要求</strong>：99.9999999%（9N）以上。任何微量鐵、銅或碳雜質，都會毀掉電晶體的微弱電流切換機制。</li>
+</ul>
+<hr />
+<h2>上下游製程關聯</h2>
+<ul>
+<li><strong>前置物料</strong>：高品質天然石英砂、焦炭、高純度化學氯化氫。</li>
+<li><strong>後續製程</strong>：提純完成的塊狀或棒狀電子級多晶矽，將作為原料投入下一步的 <a href="../processes/02-wafer-manufacturing.html">晶圓長晶與切片</a>（長成單晶矽晶棒）。</li>
+</ul>
+<hr />
+<h2>常見迷思與 FAQ</h2>
+<blockquote>
+<p><strong>Q1：海灘隨便抓一把沙子就能拿來做晶片嗎？</strong><br />
+<strong>A1</strong>：概念上是的，因為成分都是二氧化矽；但實務上半導體產業會挑選純度極高、二氧化矽含量原本就超過 99% 的高純度石英砂礦，以降低後續提煉的能源消耗與化學成本。</p>
+</blockquote>
+<hr />
+<h2>參考資料來源（Citations）</h2>
+<ul>
+<li><code>SRC-001</code>: ASML, <em>The Basics of Microchips</em> (2024). <a href="https://www.asml.com/en/technology/all-about-microchips/microchip-basics">URL</a></li>
+<li><code>SRC-002</code>: imec, <em>How Are Microchips Made?</em> (2024). <a href="https://www.imec-int.com/en/what-we-offer/semiconductor-education-and-workforce-development/microchips/how-are-microchips-made">URL</a></li>
+</ul>
+</article><p class="footnote" style="margin-top:16px">此頁整理自原始 Wiki，部分進階細節仍有待補充來源。以原始資料及檢查矩陣為準。</p></div></div></main><footer class="site-footer"><div><strong>SAND / SILICON</strong><span>從資料到知識，從知識到教學。2026</span></div><div>教學示意非真實晶片尺寸　·　資料來源可追溯　·　<a href="../../sources.html">來源與使用限制</a></div></footer><script src="../../assets/site.js" defer></script></body></html>
