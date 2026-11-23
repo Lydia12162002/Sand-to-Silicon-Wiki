@@ -1,0 +1,36 @@
+# Environment and Secrets
+.env
+.env.*
+*.env
+*.pem
+*.key
+*.token
+credentials.json
+secrets.yaml
+
+# Operating System Files
+Thumbs.db
+Desktop.ini
+.DS_Store
+$RECYCLE.BIN/
+
+# Editor and IDE Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Temporary and Cache Files
+*.tmp
+*.bak
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.cache/
+node_modules/
+
+# Runtime and Local Logs (keep structured execution logs)
+logs/debug.log
+logs/*.tmp
+logs/local_cache/
